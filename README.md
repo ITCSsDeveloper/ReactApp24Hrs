@@ -87,3 +87,7 @@ make it work ไปก่อนนะ
 29. Next.js คืออีหยัง ?? เอาแบบคร่าวๆมันก็คือ server side rendering (SSR) นั้นเอง ความแตกต่างจาก React ก็คือ React จะ Render อยู่ฝั่ง Client อย่างเดียว ซึ่งเวลาตัว SEO มันมาเรียกเว็บเรา มันทำให้ไม่มีคอนเท้นไปแสดงใน SEO เลยเกิด Next.js ขึ้นมา เพื่อทำ SSR
 
 30. Next.js เป็น Base On React เหมือนกันนั้นแหละ แต่มันมีตัว NextRoute มาให้ด้วย ทำให้เวลาเราสร้างไฟล์ เราไม่ต้องไปประกาศ Route เอง และ สามารถสร้าง Foloder ซ้อนเข้าไปได้ด้วยนะ แล้ว มันสามารถตั้งชื่อไฟล์ให้รับ parameter เข้าได้ด้วยนะ ง่ายมากๆ
+
+31. อันนี้ไม่ได้เกี่ยวกับ React แต่อยากรู้ https://blogpedia.org/blogs/28/angular-directive-vs-components
+
+32. React Component สร้างง่ายกว่า Angualr Component เพราะ Angular จะต้องกำหนด selector, กำหนด tempalte มีข้อกำหนดอีกเยอะ https://betterprogramming.pub/angular-vs-react-components-compared-b4f6782bc1d9
