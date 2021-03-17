@@ -74,3 +74,16 @@ make it work ไปก่อนนะ
 
 23. การเขียน style inline ใน jsx ถ้ามีขีด ให้ลบขีดแล้วเปลี่ยนเป็นตัวใหญ่ เช่น style={{marginTop: "100px"}} ( ปกติจะเขียน margin-top ) แต่ ใน jsx ถ้าเราเขียน - มันจะ error 
 
+24. เข้าไปอ่านนิยามของ react แบบ ย่อๆ เร็วๆได้ที่ https://www.w3schools.com/react/react_jsx.asp
+
+25. App.js หรือ Component เป็น สูงสุดของ Root 
+
+26. เวลาเราจะขึ้น Component ใหม่ ให้ดูจาก App.js ก็ได้ เพราะ App.js ก็เป็น Component เช่นกัน 
+
+27. Gatsby.js คืออีหยัง ??  เขาเครมว่าเป็น framework ที่เอาไว้ทำ static website เวลา coding ก็เป็น syntax เหมือน react (base on react) เวลา build ก็จะได้เป็น html โง่ๆมาไฟล์นึง แล้วเอาไป deploy ไว้ที่ webserver ได้เลย เครมว่าเร็ว
+
+28. Gatsby.js base on react dom มันเป็นอะไรที่ wow มากเลยนะ การที่ไม่ต้องไปวุ่นวายกับ route url แค่สร้าง page ขึ้นมาเป็น .jsx แล้วก็สามารถ / url เรียกใช้ได้เลย (จริงๆ มันก็เหมือนกับการเรียกไฟล์ .php .html ผ่าน webServer นั้นแหละ แต่ อันนี้พอมันทำเสร็จมันจะ ได้เป็น static html และ จัดการ route มาให้ด้วย ซึ่ง มันเร็วกว่าวิ่งผ่าน webServer Process แน่นอน)
+
+29. Next.js คืออีหยัง ?? เอาแบบคร่าวๆมันก็คือ server side rendering (SSR) นั้นเอง ความแตกต่างจาก React ก็คือ React จะ Render อยู่ฝั่ง Client อย่างเดียว ซึ่งเวลาตัว SEO มันมาเรียกเว็บเรา มันทำให้ไม่มีคอนเท้นไปแสดงใน SEO เลยเกิด Next.js ขึ้นมา เพื่อทำ SSR
+
+30. Next.js เป็น Base On React เหมือนกันนั้นแหละ แต่มันมีตัว NextRoute มาให้ด้วย ทำให้เวลาเราสร้างไฟล์ เราไม่ต้องไปประกาศ Route เอง และ สามารถสร้าง Foloder ซ้อนเข้าไปได้ด้วยนะ แล้ว มันสามารถตั้งชื่อไฟล์ให้รับ parameter เข้าได้ด้วยนะ ง่ายมากๆ
