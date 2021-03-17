@@ -5,6 +5,8 @@ ITCSsDeveloper/ReactApp24Hrs
 
 ผมจะเขียนเรื่องราว หรือ ขั้นตอนที่ผมอยากจะเขียนเป็นข้อๆ เป็นลำดับ (ไม่สำคัญว่าเพื่ออะไร เขียนไว้ให้ตัวเองครับ :D )
 
+# Start At 20.00 17/3/2021
+
 
 1.  install node js
 
@@ -42,5 +44,9 @@ ITCSsDeveloper/ReactApp24Hrs
 14. เราจะทำงานกับ style จริงๆ ที่ไฟล์ app.css 
 
 15. เวลาจะกำหนดค่าให้ prop ของ html tag ให้ prop={ xxxx } เช่น img src={ xxx }
+
+16. Build Deploy PRD : npm run-script build
+
+17. หลังจาก build เสร็จ มันจะสร้าง Folder Build ข้างในจะเก็บ Static + css + js และ ทุกอย่างที่ใช้ในการ deploy
 
 
