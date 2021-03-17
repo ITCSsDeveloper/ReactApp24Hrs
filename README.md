@@ -5,6 +5,15 @@ ITCSsDeveloper/ReactApp24Hrs
 
 ผมจะเขียนเรื่องราว หรือ ขั้นตอนที่ผมอยากจะเขียนเป็นข้อๆ เป็นลำดับ (ไม่สำคัญว่าเพื่ออะไร เขียนไว้ให้ตัวเองครับ :D )
 
+ณ ตอนนี้คงไม่ได้หาเวลาที่จะเขียนทุกอย่างให้ถูกต้อง 
+เพียงแค่ต้องการอยากรู้ว่ามันทำไรได้บ้าง และ ทำได้แค่ไหน
+
+หลังจากนั้น เมื่อเวลามีพอ จะขอทำให้ มันถูกต้อง
+
+make it work, make it right, make it fast !
+make it work ไปก่อนนะ 
+:D
+
 # Start At 20.00 17/3/2021
 
 
@@ -49,4 +58,19 @@ ITCSsDeveloper/ReactApp24Hrs
 
 17. หลังจาก build เสร็จ มันจะสร้าง Folder Build ข้างในจะเก็บ Static + css + js และ ทุกอย่างที่ใช้ในการ deploy
 
+18. static file ที่เราต้องใช้ในโปรเจค ให้เอาเก็บไว้ที่ folder public เวลา build แล้ว มันจะเอาไฟล์ที่ อยู่ในนี้ออกไปด้วย
+
+19. เราสามารถอ้างอิงไฟล์ที่อยู่ใน public ของเราได้ เช่น src="/images/logo.png"
+
+20. import logo.svg นี่ยังไม่เข้าใจนะว่าเวลา build มันออกไปยังไง เพราะ ใน build มันไม่มีไฟล์ .svg ติดมาด้วย
+
+21. การเขียน loop ใน jsx เราจะ loop แล้ว สร้าง element เก็บไว้ก่อนแล้วค่อยเอามาพ่นออก 
+    ref : https://flaviocopes.com/react-how-to-loop/
+
+22. เราจะใช้คำสั่ง array.map มาช่วยในการ เขียน loop ใน jsx
+    {elements.map((value, index) => {
+        return <li key={index}>{value}</li>
+      })}
+
+23. การเขียน style inline ใน jsx ถ้ามีขีด ให้ลบขีดแล้วเปลี่ยนเป็นตัวใหญ่ เช่น style={{marginTop: "100px"}} ( ปกติจะเขียน margin-top ) แต่ ใน jsx ถ้าเราเขียน - มันจะ error 
 

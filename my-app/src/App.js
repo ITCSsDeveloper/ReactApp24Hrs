@@ -1,8 +1,38 @@
 import logo from './logo.svg';
 import './App.css';
 
+var dict = [
+  {
+    title : "มดแดง",
+    img : 'img-001.jpg'
+  },
+  {
+    title : "แม่เป้ง",
+    img : 'img-002.jpg'
+  },
+  {
+    title : "ไข่ผาก ( ไข่มดแดง ขนาดเล็ก)",
+    img : 'img-003.jpg'
+  },
+  {
+    title : "ไข่ต่ง ( ไข่มดแดง ขนาดใหญ่)",
+    img : 'img-004.jpg'
+  },
+]
+
+
 function App() {
   var appTitle = "My React App"
+
+  // Generate Dict UI
+  var imgGrid = []
+  for (const [index, value] of dict.entries()) {
+    var srcImage = '/images/' + value.img
+    imgGrid.push( 
+        <img key={index} src={srcImage} className="cus-image-grid" alt={value.title} ></img>
+    )
+  }
+
   return (
     <div className="App">
       <nav className="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0">
@@ -33,6 +63,15 @@ function App() {
               </form>
             </div>
           </div>
+        </div>
+      </div>
+
+      <div className="container-fluid" style={{marginTop: "100px"}}>
+        <div className="row cus-div-content-center">
+          <h3>รูปกระกอบสวยๆ</h3>
+        </div>
+        <div className="row cus-div-content-center">
+          {imgGrid}
         </div>
       </div>
     </div>
