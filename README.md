@@ -92,4 +92,29 @@ make it work ไปก่อนนะ
 
 32. React Component สร้างง่ายกว่า Angualr Component เพราะ Angular จะต้องกำหนด selector, กำหนด tempalte มีข้อกำหนดอีกเยอะ https://betterprogramming.pub/angular-vs-react-components-compared-b4f6782bc1d9
 
-32. 
+32. States คือ ข้อมูลที่อยู่ในตัว Component เป็นมูลที่สามารถเปลี่ยนแปลงได้ และ การเปลี่ยนแปลงจะส่งผลต่อหน้าเว็บที่เอา States ไปใช้ด้วย 
+
+33. import React, { useState } from 'react';
+    const [text, setText] =  useState('ทดสอบๆๆ');
+
+34. การใช้ State ก็เหมือนกับการประกาศค่าตัวแปรของ Angular นั้นแหละ เพียงแต่เราต้องบอกก่อนว่า ตัวแปรนี้ต้องทำ State หรือเปล่า เพราะ ถ้าไม่ทำ State บอกไว้ เวลาค่ามีการอัพเดทที่ตัวแปร มันจะไม่แสดงผลที่หน้าจอ ( อารมณ์เหมือน $scope.$apply()  )
+
+35. React สร้างโดย Facebook มีเทคโนโลยี virtual dom in memory ( Render only changed ) 
+
+36. React ใช้งานบน Facebook ครั้งแรกเมื่อปี 2011 for Facebook's Newsfeed feature.
+
+37. React สามารถเขียน เป็นแบบ html + babel  (ใช้ตัว React production min js )
+
+38. React Props มันก็คือ function argments in js
+
+39. Lifecycle of Components main phases =  Mounting, Updating, and Unmounting.
+    Mounting = putting elements into the DOM.
+        constructor()
+        getDerivedStateFromProps()
+        render()
+        componentDidMount()
+    The render() method is required and will always be called
+
+40. 
+
+    

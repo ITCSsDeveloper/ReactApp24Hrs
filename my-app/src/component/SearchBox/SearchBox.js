@@ -1,10 +1,7 @@
-
 import './SearchBox.css';
 
 function SearchBox(props) {
     const { logo } = props
-
-
     return (
         <div className="container-fluid">
             <div className="row ">

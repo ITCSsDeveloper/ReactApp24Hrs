@@ -1,12 +1,14 @@
 import './PhotoGrid.css'
-import './Action.js'
-
-
+import React, { useState } from 'react';
+import PhotoPreview from '../PhotoPreview/PhotoPreview'
 
 function PhotoGrid(props) {
+    const [text, setText] = useState('ทดสอบๆๆ');
+    const [selected, setSelectedImage] = useState(null);
+
     const { dict } = props;
-    function ShowAlert() {
-        console.log('Alert Click')
+    function ShowPreviewImg() {
+        selected = true
     }
     var imgGrid = []
     for (const [index, value] of dict.entries()) {
@@ -16,15 +18,23 @@ function PhotoGrid(props) {
         )
     }
 
+    const photoPreview = null;
+    if (selected != null) {
+        photoPreview = <PhotoPreview></PhotoPreview>
+    }
+
     return (
-        <div className="container-fluid" style={{ marginTop: "100px" }}>
+        <div className="container-fluid" style={{ marginTop: "100px", marginBottom: '100px' }}>
+            { photoPreview }
             <div className="row cus-div-content-center">
                 <h3>รูปกระกอบสวยๆ</h3>
             </div>
             <div className="row cus-div-content-center">
                 {imgGrid}
             </div>
-            <button onClick={ShowAlert} >Click</button>
+            <div className="row cus-div-content-center">
+                <button onClick={ShowPreviewImg} >{text}</button>
+            </div>
         </div>
     );
 }
