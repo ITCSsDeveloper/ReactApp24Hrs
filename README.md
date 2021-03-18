@@ -91,3 +91,5 @@ make it work ไปก่อนนะ
 31. อันนี้ไม่ได้เกี่ยวกับ React แต่อยากรู้ https://blogpedia.org/blogs/28/angular-directive-vs-components
 
 32. React Component สร้างง่ายกว่า Angualr Component เพราะ Angular จะต้องกำหนด selector, กำหนด tempalte มีข้อกำหนดอีกเยอะ https://betterprogramming.pub/angular-vs-react-components-compared-b4f6782bc1d9
+
+32. 
